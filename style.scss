@@ -1,0 +1,23 @@
+@import 'reset';
+
+
+@mixin flex($direction, $justify, $align){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin transform($property){
+transform: $property;
+-webkit-transform: $property;
+-ms-transform: $property;
+-o-transform: $property;
+}
+
+.wrap{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(216, 218, 219);
+    @include flex(row, center , center );
+}
