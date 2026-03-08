@@ -25,7 +25,7 @@ transform: $property;
     .page{
         width: 1600px;
         height: 700px;
-        background-color: aqua;
+        //background-color: aqua;
         @include flex(row, center ,center );
 
 
@@ -33,7 +33,7 @@ transform: $property;
         .box1{
             width: 750px;
             height: 600px;
-            background-color: orange;
+            //background-color: orange;
             @include flex(row, center , center );
 
 
@@ -49,7 +49,7 @@ transform: $property;
         }
 
         .line{
-            width: 5px;
+            width: 3px;
             height: 500px;
             background-color: black;
         }
@@ -57,8 +57,86 @@ transform: $property;
         .box2{
             width: 750px;
             height: 600px;
-            background-color: green;
+            //background-color: green;
             @include flex(column, center,center );
+
+
+            .name{
+                padding: 30px;
+            }
+
+            .bigtext{
+                //margin-right: 30px;
+                font-size: 40px;
+                padding: 20px;
+            }
+
+            .text{
+                width: 700px;
+                height: 100px;
+                //background-color: aqua;
+                padding: 20px;
+            }
+
+            .butons{
+                width: 500px;
+                height: 70px;
+                //background-color: red;
+                @include flex(row, space-around , center );
+                padding: 20px;
+
+                .buton1 {
+                    .butnsize{
+                        width: 100px;
+                        height: 35px;
+                        border-radius: 5px;
+                    }
+                    padding: 20px;
+                }
+
+                .buton2 {
+                    .butnsize{
+                        width: 100px;
+                        height: 35px;
+                        border-radius: 5px;
+                    }
+                    padding: 20px;
+                }
+
+
+            }
+
+            .media{
+                width: 300px;
+                height: 50px;
+                //background-color: pink;
+                @include flex(row, space-around , center );
+
+
+                .insta{
+                    width: 30px;
+                    height: 30px;
+                    background-image: url(./img/instagram.png);
+                    background-position: center;
+                    background-size: cover;
+                }
+
+                .facebook{
+                    width: 30px;
+                    height: 30px;
+                    background-image: url(./img/facebook.png);
+                    background-position: center;
+                    background-size: cover;
+                }
+
+                .linkid{
+                    width: 30px;
+                    height: 30px;
+                    background-image: url(./img/linkid.png);
+                    background-position: center;
+                    background-size: cover;
+                }
+            }
         }
 
 
