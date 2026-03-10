@@ -23,15 +23,19 @@ transform: $property;
 
 
     .page{
-        width: 1600px;
+        max-width: 1600px;
         height: 700px;
         //background-color: aqua;
         @include flex(row, center ,center );
+        @media screen and (max-width: 800px) {
+            flex-direction: column;
+        }
 
 
 
         .box1{
-            width: 750px;
+            width: 100%;
+            max-width: 750px;
             height: 600px;
             //background-color: orange;
             @include flex(row, center , center );
@@ -52,10 +56,15 @@ transform: $property;
             width: 3px;
             height: 500px;
             background-color: black;
+
+            @media screen and (max-width: 900px) {
+                display: none;
+            }
         }
 
         .box2{
-            width: 750px;
+            width: 100%;
+            max-width: 750px;
             height: 600px;
             //background-color: green;
             @include flex(column, center,center );
@@ -69,21 +78,37 @@ transform: $property;
                 //margin-right: 30px;
                 font-size: 40px;
                 padding: 20px;
+                @media screen and (max-width:850px) {
+                    font-size: 30px;
+                }
+                @media screen and (max-width:650px) {
+                    font-size: 18px;
+                }
+
             }
 
             .text{
-                width: 700px;
+                max-width: 700px;
                 height: 100px;
                 //background-color: aqua;
                 padding: 20px;
+                @media screen and (max-width: 500px) {
+                    font-size: 10px;
+                    
+                }
             }
 
             .butons{
-                width: 500px;
+                width: 100%;
+                max-width: 500px;
                 height: 70px;
                 //background-color: red;
                 @include flex(row, space-around , center );
                 padding: 20px;
+
+                @media screen and (max-width: 860px) {
+                    margin: 0 20px;
+                }
 
                 .buton1 {
                     .butnsize{
@@ -107,11 +132,14 @@ transform: $property;
             }
 
             .media{
-                width: 300px;
+                width: 100%;
+                max-width: 300px;
                 height: 50px;
                 //background-color: pink;
                 @include flex(row, space-around , center );
-
+                @media screen and (max-width: 860px) {
+                    margin: 0 10px;
+                }
 
                 .insta{
                     width: 30px;
