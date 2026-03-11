@@ -48,6 +48,12 @@ transform: $property;
                 background-size: cover;
                 background-position: center;
                 border: solid;
+
+                @media screen and (max-width: 650px) {
+                    width: 250px;
+                    height: 250px;
+                    
+                }
                 
             }
         }
@@ -93,7 +99,7 @@ transform: $property;
                 //background-color: aqua;
                 padding: 20px;
                 @media screen and (max-width: 500px) {
-                    font-size: 10px;
+                    font-size: 14px;
                     
                 }
             }
@@ -117,6 +123,11 @@ transform: $property;
                         border-radius: 5px;
                     }
                     padding: 20px;
+
+                    .butnsize:hover{
+                        background-color: black;
+                        color: aliceblue;
+                    }
                 }
 
                 .buton2 {
@@ -126,6 +137,12 @@ transform: $property;
                         border-radius: 5px;
                     }
                     padding: 20px;
+                    
+                    .butnsize:hover{
+                        background-color: black;
+                        color: aliceblue;
+                    }
+
                 }
 
 
@@ -147,6 +164,11 @@ transform: $property;
                     background-image: url(./img/instagram.png);
                     background-position: center;
                     background-size: cover;
+                    transition: 0.3s;
+
+                    &:hover{
+                        transform: translateY(-5px);
+                    }
                 }
 
                 .facebook{
@@ -155,6 +177,11 @@ transform: $property;
                     background-image: url(./img/facebook.png);
                     background-position: center;
                     background-size: cover;
+                    transition: 0.3s;
+
+                    &:hover{
+                        transform: translateY(-5px);
+                    }
                 }
 
                 .linkid{
@@ -163,6 +190,11 @@ transform: $property;
                     background-image: url(./img/linkid.png);
                     background-position: center;
                     background-size: cover;
+                    transition: 0.3s;
+
+                    &:hover{
+                        transform: translateY(-5px);
+                    }
                 }
             }
         }
