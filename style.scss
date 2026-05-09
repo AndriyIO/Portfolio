@@ -262,10 +262,438 @@ transform: $property;
     .page3{
         width: 100%;
         min-height: 100vh;
-        background-color: pink;
+        //background-color: pink;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        .box3{
+            width: 100%;
+            max-width: 1100px;
+            min-height: 650px;
+            //background-color: gold;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+
+
+            .line1{
+                width: 100%;
+                max-width: 1000px;
+                min-height: 280px;
+                //background-color: green;
+                margin: 20px;
+
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                 @media screen and (max-width: 800px) {
+            flex-direction: column;
+            height: auto;
+        }
+
+                .card1{
+                    width: 280px;
+                    height: 250px;
+                    //background-color: red;
+                    border-radius: 12px;
+                    border: solid;
+                    
+                    @include flex(column,center ,center );
+                    @media screen and (max-width:900px) {
+                        width: 240px;
+                        height: 220px;
+                    }
+
+                    // display: flex;
+                    // flex-direction: column;
+                    // justify-content: center;
+                    // align-items: center;
+
+                    .pic1{
+                        width: 280px;
+                        height: 210px;
+                        //background-color: aqua;
+                        background-image: url(./img/pic1.jpg);
+                        border-radius: 12px;
+                        background-position: center;
+                        background-size: cover;
+
+                        @media screen and (max-width:900px) {
+                        width: 220px;
+                        height: 190px;
+                    }
+                    }
+
+                    .but1{
+                        width: 280px;
+                        height: 125px;
+                        //background-color: #fff;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        .buton3 {
+                    .butnsize{
+                        width: 100px;
+                        height: 35px;
+                        border-radius: 5px;
+                    }
+                    
+                    
+                    .butnsize:hover{
+                        background-color: rgb(218, 95, 95);
+                        color: aliceblue;
+                    }
+
+                }
+
+                  
+                        
+                    }
+                }
+
+                .card2{
+                    width: 280px;
+                    height: 250px;
+                    
+                    border: solid;
+                    border-radius: 12px;
+
+                    @include flex( column, center , center );
+                    @media screen and (max-width:900px) {
+                        width: 240px;
+                        height: 220px;
+                        
+                    }
+
+                    .pic2{
+                        width: 280px;
+                        height: 210px;
+                        background-image: url(./img/pic2.jpg);
+                        background-position: center;
+                        background-size: cover;
+                        border-radius: 12px;
+
+                        @media screen and (max-width:900px) {
+                        width: 220px;
+                        height: 190px;
+                    }
+                    }
+
+                    .but2{
+                        width: 280px;
+                        height: 125px;
+                        @include flex(row, center ,center );
+
+                      .buton4 {
+                    .butnsize{
+                        width: 100px;
+                        height: 35px;
+                        border-radius: 5px;
+                    }
+                    
+                    
+                    .butnsize:hover{
+                        background-color: rgb(218, 95, 95);
+                        color: aliceblue;
+                    }
+
+                }
+
+                    }
+
+                }
+
+                .card3{
+                    width: 280px;
+                    height: 250px;
+                    //background-color: rgb(0, 255, 170);
+                    border: solid;
+                    border-radius: 12px;
+
+                    @include flex( column, center , center );
+                    @media screen and (max-width:900px) {
+                        width: 240px;
+                        height: 220px;
+                    }
+
+                     .pic3{
+                        width: 280px;
+                        height: 210px;
+                        background-image: url(./img/pic3.jpg);
+                        background-position: center;
+                        background-size: cover;
+                        border-radius: 12px;
+
+                        @media screen and (max-width:900px) {
+                        width: 220px;
+                        height: 190px;
+                    }
+                    }
+
+                     .but3{
+                        width: 280px;
+                        height: 125px;
+                        @include flex(row, center ,center );
+
+                      .buton5 {
+                    .butnsize{
+                        width: 100px;
+                        height: 35px;
+                        border-radius: 5px;
+                    }
+                    
+                    
+                    .butnsize:hover{
+                        background-color: rgb(218, 95, 95);
+                        color: aliceblue;
+                    }
+
+                }
+
+
+                    }
+
+                }
+
+            }
+
+            .line2{
+                width: 100%;
+            max-width: 1000px;
+            min-height: 280px;
+            //background-color: purple;
+
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                 @media screen and (max-width: 800px) {
+            flex-direction: column;
+            height: auto;
+        }
+
+                .card4{
+                    width: 280px;
+                    height: 250px;
+                    //background-color: rgb(56, 20, 187);
+                    border: solid;
+                    border-radius: 12px;
+
+                    @include flex( column, center , center );
+                    @media screen and (max-width:900px) {
+                        width: 240px;
+                        height: 220px;
+                    }
+
+                     .pic4{
+                        width: 280px;
+                        height: 210px;
+                        background-image: url(./img/pic4.jpg);
+                        background-position: center;
+                        background-size: cover;
+                        border-radius: 12px;
+
+                        @media screen and (max-width:900px) {
+                        width: 220px;
+                        height: 190px;
+                    }
+                    }
+
+                    .but4{
+                        width: 280px;
+                        height: 125px;
+                        @include flex(row, center ,center );
+
+                      .buton6 {
+                    .butnsize{
+                        width: 100px;
+                        height: 35px;
+                        border-radius: 5px;
+                    }
+                    
+                    
+                    .butnsize:hover{
+                        background-color: rgb(218, 95, 95);
+                        color: aliceblue;
+                    }
+
+                }
+
+
+                    }
+
+                }
+
+                .card5{
+                    width: 280px;
+                    height: 250px;
+                    //background-color: rgb(255, 115, 0);
+                    border: solid;
+                    border-radius: 12px;
+
+                    @include flex( column, center , center );
+                    @media screen and (max-width:800px) {
+                        width: 240px;
+                        height: 220px;
+                    }
+
+                     .pic5{
+                        width: 280px;
+                        height: 210px;
+                        background-image: url(./img/pic5.jpg);
+                        background-position: center;
+                        background-size: cover;
+                        border-radius: 12px;
+
+                        @media screen and (max-width:900px) {
+                        width: 220px;
+                        height: 190px;
+                    }
+                    }
+                    .but5{
+                        width: 280px;
+                        height: 125px;
+                        @include flex(row, center ,center );
+
+                      .buton7 {
+                    .butnsize{
+                        width: 100px;
+                        height: 35px;
+                        border-radius: 5px;
+                    }
+                                        
+                    .butnsize:hover{
+                        background-color: rgb(218, 95, 95);
+                        color: aliceblue;
+                    }
+
+                }
+
+                    }
+
+                }
+
+                .card6{
+                    width: 280px;
+                    height: 250px;
+                    //background-color: rgb(33, 173, 127);
+                    border: solid;
+                    border-radius: 12px;
+
+                    @include flex( column, center , center );
+                    @media screen and (max-width:900px) {
+                        width: 240px;
+                        height: 220px;
+                    }
+
+                     .pic6{
+                        width: 280px;
+                        height: 210px;
+                        background-image: url(./img/pic6.jpg);
+                        background-position: center;
+                        background-size: cover;
+                        border-radius: 12px;
+
+                        @media screen and (max-width:900px) {
+                        width: 220px;
+                        height: 190px;
+                    }
+                    }
+                     .but6{
+                        width: 280px;
+                        height: 125px;
+                        @include flex(row, center ,center );
+
+                      .buton8 {
+                    .butnsize{
+                        width: 100px;
+                        height: 35px;
+                        border-radius: 5px;
+                    }
+                                        
+                    .butnsize:hover{
+                        background-color: rgb(218, 95, 95);
+                        color: aliceblue;
+                    }
+
+                }
+
+                    }
+                }
+
+            }
+            
+
+        }
+
+
+
+    }
+
+    .page4{
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .box4{
+            width: 100%;
+            max-width: 1100px;
+            height: 680px;
+            //background-color: aquamarine;
+            @include flex(row,center ,center );
+
+             @media screen and (max-width: 800px) {
+            flex-direction: column;
+        }
+
+            .softskil{
+                width: 100%;
+                max-width: 500px;
+                height: 600px;
+                //background-color: palevioletred;
+                margin: 0 30px;
+                @include flex(column, center ,center );
+                border: solid;
+                border-radius: 12px;
+
+                 @media screen and (max-width:900px) {
+                        width: 370px;
+                        height: 300px;
+                        font-size: 12px;
+                    }
+
+            }
+
+            .hardskil{
+                 width: 100%;
+                max-width: 500px;
+                height: 600px;
+                //background-color: teal;
+                margin: 20px;
+                @include flex(column, center , center);
+                border: solid;
+                border-radius: 12px;
+
+                
+                 @media screen and (max-width:900px) {
+                        width: 370px;
+                        height: 300px;
+                        font-size: 12px;
+                    }
+                
+            }
+
+        }
     }
 
 

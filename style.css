@@ -233,8 +233,387 @@ a {
 .wrap .page3 {
   width: 100%;
   min-height: 100vh;
-  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wrap .page3 .box3 {
+  width: 100%;
+  max-width: 1100px;
+  min-height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wrap .page3 .box3 .line1 {
+  width: 100%;
+  max-width: 1000px;
+  min-height: 280px;
+  margin: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media screen and (max-width: 800px) {
+  .wrap .page3 .box3 .line1 {
+    flex-direction: column;
+    height: auto;
+  }
+}
+.wrap .page3 .box3 .line1 .card1 {
+  width: 280px;
+  height: 250px;
+  border-radius: 12px;
+  border: solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 900px) {
+  .wrap .page3 .box3 .line1 .card1 {
+    width: 240px;
+    height: 220px;
+  }
+}
+.wrap .page3 .box3 .line1 .card1 .pic1 {
+  width: 280px;
+  height: 210px;
+  background-image: url(./img/pic1.jpg);
+  border-radius: 12px;
+  background-position: center;
+  background-size: cover;
+}
+@media screen and (max-width: 900px) {
+  .wrap .page3 .box3 .line1 .card1 .pic1 {
+    width: 220px;
+    height: 190px;
+  }
+}
+.wrap .page3 .box3 .line1 .card1 .but1 {
+  width: 280px;
+  height: 125px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.wrap .page3 .box3 .line1 .card1 .but1 .buton3 .butnsize {
+  width: 100px;
+  height: 35px;
+  border-radius: 5px;
+}
+.wrap .page3 .box3 .line1 .card1 .but1 .buton3 .butnsize:hover {
+  background-color: rgb(218, 95, 95);
+  color: aliceblue;
+}
+.wrap .page3 .box3 .line1 .card2 {
+  width: 280px;
+  height: 250px;
+  border: solid;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 900px) {
+  .wrap .page3 .box3 .line1 .card2 {
+    width: 240px;
+    height: 220px;
+  }
+}
+.wrap .page3 .box3 .line1 .card2 .pic2 {
+  width: 280px;
+  height: 210px;
+  background-image: url(./img/pic2.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 12px;
+}
+@media screen and (max-width: 900px) {
+  .wrap .page3 .box3 .line1 .card2 .pic2 {
+    width: 220px;
+    height: 190px;
+  }
+}
+.wrap .page3 .box3 .line1 .card2 .but2 {
+  width: 280px;
+  height: 125px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.wrap .page3 .box3 .line1 .card2 .but2 .buton4 .butnsize {
+  width: 100px;
+  height: 35px;
+  border-radius: 5px;
+}
+.wrap .page3 .box3 .line1 .card2 .but2 .buton4 .butnsize:hover {
+  background-color: rgb(218, 95, 95);
+  color: aliceblue;
+}
+.wrap .page3 .box3 .line1 .card3 {
+  width: 280px;
+  height: 250px;
+  border: solid;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 900px) {
+  .wrap .page3 .box3 .line1 .card3 {
+    width: 240px;
+    height: 220px;
+  }
+}
+.wrap .page3 .box3 .line1 .card3 .pic3 {
+  width: 280px;
+  height: 210px;
+  background-image: url(./img/pic3.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 12px;
+}
+@media screen and (max-width: 900px) {
+  .wrap .page3 .box3 .line1 .card3 .pic3 {
+    width: 220px;
+    height: 190px;
+  }
+}
+.wrap .page3 .box3 .line1 .card3 .but3 {
+  width: 280px;
+  height: 125px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.wrap .page3 .box3 .line1 .card3 .but3 .buton5 .butnsize {
+  width: 100px;
+  height: 35px;
+  border-radius: 5px;
+}
+.wrap .page3 .box3 .line1 .card3 .but3 .buton5 .butnsize:hover {
+  background-color: rgb(218, 95, 95);
+  color: aliceblue;
+}
+.wrap .page3 .box3 .line2 {
+  width: 100%;
+  max-width: 1000px;
+  min-height: 280px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media screen and (max-width: 800px) {
+  .wrap .page3 .box3 .line2 {
+    flex-direction: column;
+    height: auto;
+  }
+}
+.wrap .page3 .box3 .line2 .card4 {
+  width: 280px;
+  height: 250px;
+  border: solid;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 900px) {
+  .wrap .page3 .box3 .line2 .card4 {
+    width: 240px;
+    height: 220px;
+  }
+}
+.wrap .page3 .box3 .line2 .card4 .pic4 {
+  width: 280px;
+  height: 210px;
+  background-image: url(./img/pic4.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 12px;
+}
+@media screen and (max-width: 900px) {
+  .wrap .page3 .box3 .line2 .card4 .pic4 {
+    width: 220px;
+    height: 190px;
+  }
+}
+.wrap .page3 .box3 .line2 .card4 .but4 {
+  width: 280px;
+  height: 125px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.wrap .page3 .box3 .line2 .card4 .but4 .buton6 .butnsize {
+  width: 100px;
+  height: 35px;
+  border-radius: 5px;
+}
+.wrap .page3 .box3 .line2 .card4 .but4 .buton6 .butnsize:hover {
+  background-color: rgb(218, 95, 95);
+  color: aliceblue;
+}
+.wrap .page3 .box3 .line2 .card5 {
+  width: 280px;
+  height: 250px;
+  border: solid;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 800px) {
+  .wrap .page3 .box3 .line2 .card5 {
+    width: 240px;
+    height: 220px;
+  }
+}
+.wrap .page3 .box3 .line2 .card5 .pic5 {
+  width: 280px;
+  height: 210px;
+  background-image: url(./img/pic5.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 12px;
+}
+@media screen and (max-width: 900px) {
+  .wrap .page3 .box3 .line2 .card5 .pic5 {
+    width: 220px;
+    height: 190px;
+  }
+}
+.wrap .page3 .box3 .line2 .card5 .but5 {
+  width: 280px;
+  height: 125px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.wrap .page3 .box3 .line2 .card5 .but5 .buton7 .butnsize {
+  width: 100px;
+  height: 35px;
+  border-radius: 5px;
+}
+.wrap .page3 .box3 .line2 .card5 .but5 .buton7 .butnsize:hover {
+  background-color: rgb(218, 95, 95);
+  color: aliceblue;
+}
+.wrap .page3 .box3 .line2 .card6 {
+  width: 280px;
+  height: 250px;
+  border: solid;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 900px) {
+  .wrap .page3 .box3 .line2 .card6 {
+    width: 240px;
+    height: 220px;
+  }
+}
+.wrap .page3 .box3 .line2 .card6 .pic6 {
+  width: 280px;
+  height: 210px;
+  background-image: url(./img/pic6.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 12px;
+}
+@media screen and (max-width: 900px) {
+  .wrap .page3 .box3 .line2 .card6 .pic6 {
+    width: 220px;
+    height: 190px;
+  }
+}
+.wrap .page3 .box3 .line2 .card6 .but6 {
+  width: 280px;
+  height: 125px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.wrap .page3 .box3 .line2 .card6 .but6 .buton8 .butnsize {
+  width: 100px;
+  height: 35px;
+  border-radius: 5px;
+}
+.wrap .page3 .box3 .line2 .card6 .but6 .buton8 .butnsize:hover {
+  background-color: rgb(218, 95, 95);
+  color: aliceblue;
+}
+.wrap .page4 {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wrap .page4 .box4 {
+  width: 100%;
+  max-width: 1100px;
+  height: 680px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 800px) {
+  .wrap .page4 .box4 {
+    flex-direction: column;
+  }
+}
+.wrap .page4 .box4 .softskil {
+  width: 100%;
+  max-width: 500px;
+  height: 600px;
+  margin: 0 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid;
+  border-radius: 12px;
+}
+@media screen and (max-width: 900px) {
+  .wrap .page4 .box4 .softskil {
+    width: 370px;
+    height: 300px;
+    font-size: 12px;
+  }
+}
+.wrap .page4 .box4 .hardskil {
+  width: 100%;
+  max-width: 500px;
+  height: 600px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid;
+  border-radius: 12px;
+}
+@media screen and (max-width: 900px) {
+  .wrap .page4 .box4 .hardskil {
+    width: 370px;
+    height: 300px;
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=style.css.map */
